@@ -1,0 +1,241 @@
+html {
+  height: 100%;
+  width: 100%;
+  --color-bienvenido-light: #4a4a4a;
+  --subtitle-section-font: 'Abhaya Libre', serif;
+  --text-cursive-font: 'Caveat', cursive;
+  --text-font:'Comic Neue', cursive;
+}
+
+/* barra de navegacion */
+
+nav {
+  min-height: 7rem;
+}
+
+/* bienvenido */
+
+
+.bienvenida {
+  background: rgb(17, 0, 36);
+  background: linear-gradient(0deg, rgba(17, 0, 36, 0.3) 0%, rgba(61, 9, 121, 0.3) 35%, rgba(189, 255, 0, 0.3) 100%);
+  color: var(--color-bienvenido-light);
+  background-size: cover;
+  text-shadow: 3px 3px 5px var(--color-bienvenido-light);
+}
+
+.bienvenida h1 {
+  font-size: 15vw;
+  font-weight: 800;
+}
+.bienvenida i{
+  font-size: 20vw;
+}
+
+@media (min-width: 768px){
+  .bienvenida h1 {
+    font-size: 10vw;
+    font-weight: 800;
+  }
+  .bienvenida i{
+    font-size: 15vw;
+  }
+
+}
+
+.bienvenida p{
+ font-family: var(--text-cursive-font);
+}
+
+
+
+.slide-in-top {
+	-webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+}
+
+ @-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.bienvenida p {
+  font-size: 7vw;
+}
+
+/* subtitulo */
+
+.subtitulo {
+  font-family: var(--subtitle-section-font);
+  font-size: 48px;
+  text-shadow: 2px 2px 5px;
+}
+
+
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+  animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* compra venta */
+
+#main .row {
+  min-height: 50vh;
+}
+
+
+
+#main a {
+  font-size: 8vw;
+}
+
+/* destacados */
+
+#destacados .col{
+  transition: 0.5s;
+}
+
+#destacados .col:hover{
+  box-shadow: 5px 5px 7px #2C1440;
+  transform: translateY(-10px);
+}
+
+#destacados .carta {                                                                                                                                 
+  height: fit-content;
+  width: 18rem;
+}
+
+#destacados .carta img {
+  height: 18rem;
+  width: 100%;
+} 
+
+
+#ingresos .col{
+  transition: 0.5s;
+}
+
+#ingresos .col:hover{
+  box-shadow: 5px 5px 7px #2C1440;
+  transform: translateY(-10px);
+}
+
+/* empresa */
+
+#empresa {
+  background: url(img/bg/About-stfy\ copiaFINAL.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  max-height: fit-content;
+  /* font-family: var(--text-font); */
+}
+
+#empresa i {
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+/* contacto */
+
+footer div {
+  padding: 2rem;
+}
+
+footer h3+p {
+  margin-bottom: 2rem;
+}
+
+footer span i {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+
+
+footer span:hover {
+  background-color: #9e51ff;
+  color: white;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+footer img {
+  width: 80%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffdf4b;
+}
+
+.color {
+  color: rgb(173, 95, 236);
+}
+
+/* flecha flotante */
+
+#flecha-arriba {
+  background-color: rgb(199, 152, 237);
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+#flecha-arriba a {
+  text-decoration: none;
+  color: white;
+}

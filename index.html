@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Caveat:wght@600&family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div id="inicio"></div>
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/bg/TorresInmoLogoFINAL.png" style="width:60px; height:50px" alt="">
+
+        Torres Inmobiliaria
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ventas.html">Venta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="alquiler.html">Alquiler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#empresa">Empresa</a>
+          </li>
+          <a class="btn btn-primary" href="#contacto" role="button">Contacto</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--BIENVENIDA-->
+  <div>
+    <div class="container-fluid bienvenida d-flex justify-content-center flex-column p-5 vh-100">
+      <div class="row row-cols-md-2">
+        <div class="col-sm-12 col-md-8">
+          <h1 class="scale-in-center">Bienvenido</h1>
+          <p class="scale-in-center fs-1">Su próximo hogar está muy cerca...</p>
+        </div>
+        <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center slide-in-top"><i class="fa-solid fa-house-chimney-user" style="color: #b87eff;"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!--VENTA y ALQUILER-->
+  <section id="main" class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 border" data-aos="fade-right">
+      <div class="col border" id="venta" >
+        <a href="ventas.html"
+          class="w-100 h-100 d-flex justify-content-center align-items-center link-danger link-underline-opacity-0 link-opacity-50 link-offset-2 link-underline-opacity-100-hover link-opacity-100-hover">VENTA</a>
+      </div>
+      <div class="col border" id="alquiler" >
+        <a href="alquiler.html"
+          class="w-100 h-100 d-flex justify-content-center align-items-center link-danger link-underline-opacity-0 link-opacity-50 link-offset-2 link-underline-opacity-100-hover link-opacity-100-hover">ALQUILER</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!--ingresos destacados-->  
+
+    <div class="container-fluid p-5 bg-warning-subtle border" id="destacados">
+      <div class="row my-4">
+        <h2 class="subtitulo">Propiedades destacadas</h2>
+      </div>
+      <div class="row g-0 row-cols-auto justify-content-center">
+        <div class="col m-2">
+          <div class="carta border p-2 bg-light">            
+            <img src="img/propiedades/CasaCosquin.jpeg" alt="" class="bg-secondary">
+            <div class="cuerpo-carta p-3">              
+              <h2>Venta</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
+              <ul>
+                <li>Direccion</li>
+                <li>Precio</li>
+              </ul>
+              <a href=""class="btn btn-primary w-100" >Consultar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m-2">
+          <div class="carta border p-2 bg-light">            
+            <img src="img/propiedades/VillaRosasCasaRefaccionar.jpeg" alt="" class="bg-secondary">
+            <div class="cuerpo-carta p-3">              
+              <h2>Venta</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
+              <ul>
+                <li>Direccion</li>
+                <li>Precio</li>
+              </ul>
+              <a href=""class="btn btn-primary w-100" >Consultar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m-2">
+          <div class="carta border p-2 bg-light">            
+            <img src="img/propiedades/NuevoTorinoSalon.jpeg" alt="" class="bg-secondary">
+            <div class="cuerpo-carta p-3">              
+              <h2>Alquiler</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
+              <ul>
+                <li>Direccion</li>
+                <li>Precio</li>
+              </ul>
+              <a href=""class="btn btn-primary w-100" >Consultar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col m-2">
+          <div class="carta border p-2 bg-light">            
+            <img src="img/propiedades/LaFaldaCordoba.jpeg" alt="" class="bg-secondary" >
+            <div class="cuerpo-carta p-3">              
+              <h2>Venta</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
+              <ul>
+                <li>Direccion</li>
+                <li>Precio</li>
+              </ul>
+              <a href=""class="btn btn-primary w-100" >Consultar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--Otros Servicios-->
+  <div class="container-fluid bg-warning-subtle py-5" id="servicios">
+    <div class="row p-4">
+      <h2 class="subtitulo">Servicios</h2>
+    </div>
+    <div class="row row-cols-auto justify-content-center mb-4 gy-3">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-magnifying-glass-dollar" style="font-size: 6rem;"></i></div>
+          <div class="card-body">
+            <h5 class="card-title">Tasaciones</h5>
+            <p class="card-text">Tenemos la experiencia necesaria para darle a su propiedad el valor de mercado.</p>
+            <a href="https://wa.me/5493492392358" style="width:100%" class="btn btn-primary">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-scale-balanced" style="font-size: 6rem;"></i></div>
+          <div class="card-body">
+            <h5 class="card-title">Administracion</h5>
+            <p class="card-text">podemos ayudarlo con la administración de su inmueble, garantizando seguridad.</p>
+            <a href="https://wa.me/5493492392358" class="btn btn-primary" style="width:100%">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem; ">
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-car" style="font-size: 6rem;"></i></div>
+          <div class="card-body">
+            <h5 class="card-title">Gestoria</h5>
+            <p class="card-text">Contamos con el conocimiento necesario para llevar adelante la gestoria de su vehiculo.
+            </p>
+            <a href="https://wa.me/5493492392358" class="btn btn-primary" style="width:100%">Contacto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-circle-question" style="font-size: 6rem;"></i></div>
+          <div class="card-body">
+            <h5 class="card-title">Otra consulta</h5>
+            <p class="card-text">No dude en contactarnos, su consulta no nos molesta
+              estamos para responder sus inquietudes.</p>
+            <a href="https://wa.me/5493492392358" class="btn btn-primary" style="width:100%">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row " style="width:100px"></div>
+  </div>
+
+
+  <!--Empresa-->
+
+  <section id="empresa" class="py-5 px-4">
+    <div class="d-flex align-items-center">
+      <div class="contenido container-fluid p-md-4">
+        <div class="row">
+          <h2 class="subtitulo">Empresa</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            Mi nombre es Estefania Torres soy <strong>martillera publica y corredora de comercio</strong> recibida en la
+            <strong>UNL</strong> en el año 2017 Matricula N°481.
+          </div>
+          <p class="col-md-4"> Desde entonces me he propuesto lograr el mayor profesionalismo capacitandome
+            continuamente, actualmente a cargo de <strong>TORRES INMOBILIARIA</strong>. Empresa joven pero de rapido
+            crecimiento.</p>
+          <p class="col-md-4">Nos caracterizan el Entusiasmo, Profesionalismo y por sobre todo acompañamiento y
+            asesoriamiento continuo con quienes se contactan con nosotros. Aquellos que ya nos conocen destacan el trato
+            cercano que <strong>TORRES INMOBILIARIA</strong> tiene con sus clientes.</p>
+        </div>
+        <div class="row mt-4" id="icons-about">
+          <div class="col-md-4 d-flex justify-content-center"><i class="fa-solid fa-address-card"
+              style="color: #9573f2;"></i></div>
+          <div class="col-md-4 d-flex justify-content-center"><i class="fa-solid fa-award" style="color: #9573f2;"></i>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center"><i class="fa-regular fa-star" style="color: #9573f2;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Boton flotante--> 
+  <div id="flecha-arriba" class="d-flex justify-content-center align-items-center" data-aos="fade-left"
+  data-aos-anchor="#main"><a href="#inicio"><i class="fa-solid fa-angles-up"></i></a></div>
+  <!--Footer-->
+
+  <footer class="container-fluid" id="contacto">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="">TORRES</h1>
+        <h1>INMOBILIARIA</h1>
+        <img src="img/bg/TorresInmoLogoFINAL.png" alt="torres inmobiliaria logo">
+      </div>
+      <div class="col-md-6">
+        <div class="row border-bottom">
+          <h3>Direccion</h3>
+          <p>Santa Rosa 669, Rafaela, Santa Fe</p>
+        </div>
+        <div class="row border-bottom">
+          <h3>Horarios de atención</h3>
+          <p>Lun a Vie 09:00 a 12:00 y de 15:00 a 18:00</p>
+        </div>
+        <div class="row">
+          <h3>Redes</h3>
+          <span><a href="https://www.instagram.com/torres.inmobiliaria.rafaela" target="_blank"><i
+                class="fa-brands fa-instagram fa-beat" style="color:#ffdf4b;"></i>Instagram</a></span>
+          <span><a href="https://wa.me/5493492392358"><i class="fa-brands fa-whatsapp fa-shake"
+                style="color:#ffdf4b;"></i>WhatsApp</a></span>
+          <span><a href=""><i class="fa-regular fa-envelope fa-spin" style="color: #ffdf4b;"></i>E-Mail</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.906149290743!2d-61.47167252348288!3d-31.251021288278423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95caae5645e30ff7%3A0xd05d427f1eb64621!2sSta.%20Rosa%20669%2C%20Rafaela%2C%20Santa%20Fe!5e0!3m2!1ses-419!2sar!4v1695370121869!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+
+  <footer class="container-fluid bg-black">
+    <div class="row">
+      <p class="text-center text-white">Derechos reservados TORRES INMOBILIARIA 2023 - Rafaela</p>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://kit.fontawesome.com/91a32acd3c.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+
+
+
+
