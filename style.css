@@ -1,96 +1,98 @@
 html {
   height: 100%;
   width: 100%;
-  --color-bienvenido-light: #4a4a4a;
+  --color-texto-primario-light: #000000;
+  --color-texto-secundario-light: #3D3D3D;
   --subtitle-section-font: 'Abhaya Libre', serif;
   --text-cursive-font: 'Caveat', cursive;
-  --text-font:'Comic Neue', cursive;
-}
+  --text-font: 'Comic Neue', cursive;
 
-/* barra de navegacion */
+}
 
 nav {
   min-height: 7rem;
 }
 
-/* bienvenido */
-
 
 .bienvenida {
-  background: rgb(17, 0, 36);
-  background: linear-gradient(0deg, rgba(17, 0, 36, 0.3) 0%, rgba(61, 9, 121, 0.3) 35%, rgba(189, 255, 0, 0.3) 100%);
-  color: var(--color-bienvenido-light);
+
+  background: url(img/bg/About-stfy\ copiaFINAL.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: var(--color-texto-secundario-light);
   text-shadow: 3px 3px 5px var(--color-bienvenido-light);
+  height: calc(100vh - 7rem);
+  overflow-y:hidden;  
+
 }
 
 .bienvenida h1 {
-  font-size: 15vw;
+  font-size: 13vw;
   font-weight: 800;
-}
-.bienvenida i{
-  font-size: 20vw;
+  text-shadow: 4px 4px 4px var(--color-texto-secundario-light);
 }
 
-@media (min-width: 768px){
+.bienvenida p {
+  /* font-family: var(--text-cursive-font); */
+  font-size: 4vw;
+  text-shadow: 2px 2px 5px var(--color-texto-secundario-light);
+}
+
+.bienvenida i {
+  font-size: 20vw;
+  text-shadow: 2px 2px 5px var(--color-texto-secundario-light);
+}
+
+@media (min-width:767px) {
+  .bienvenida {
+    background-position: top right;
+  }
+
   .bienvenida h1 {
     font-size: 10vw;
-    font-weight: 800;
   }
-  .bienvenida i{
+
+  .bienvenida i {
     font-size: 15vw;
   }
 
 }
 
-.bienvenida p{
- font-family: var(--text-cursive-font);
-}
-
-
 
 .slide-in-top {
-	-webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
-	        animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
+  animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.8s both;
 }
 
- @-webkit-keyframes slide-in-top {
+@-webkit-keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-1000px);
-            transform: translateY(-1000px);
+    transform: translateY(-1000px);
     opacity: 0;
   }
+
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 
-
-.bienvenida p {
-  font-size: 7vw;
-}
-
-/* subtitulo */
-
-.subtitulo {
-  font-family: var(--subtitle-section-font);
-  font-size: 48px;
-  text-shadow: 2px 2px 5px;
-}
 
 
 
@@ -127,58 +129,162 @@ nav {
   }
 }
 
-/* compra venta */
+.subtitulo {
+  font-family: var(--subtitle-section-font);
+  font-size: 44px;
+  text-shadow: 2px 2px 5px;
+  color: var(--color-texto-primario-light);
+  background-color: #ede697;
+  border-radius: 0 0 10px 10px;
+}
 
-#main .row {
-  min-height: 50vh;
+
+#destacados .carta:hover {
+  box-shadow: 5px 5px 10px var(--color-texto-secundario-light);
+  /* transform: translateY(-10px); */
 }
 
 
 
-#main a {
-  font-size: 8vw;
-}
-
-/* destacados */
-
-#destacados .col{
-  transition: 0.5s;
-}
-
-#destacados .col:hover{
-  box-shadow: 5px 5px 7px #2C1440;
-  transform: translateY(-10px);
-}
-
-#destacados .carta {                                                                                                                                 
+#destacados .carta {
   height: fit-content;
-  width: 18rem;
+  width: 16rem;
+  overflow: hidden;
+  border-radius: 7px;
+  transition: 0.5s;
 }
 
 #destacados .carta img {
-  height: 18rem;
+  height: 16rem;
   width: 100%;
-} 
 
-
-#ingresos .col{
   transition: 0.5s;
 }
 
-#ingresos .col:hover{
-  box-shadow: 5px 5px 7px #2C1440;
-  transform: translateY(-10px);
+#destacados .carta img:hover {
+  transform: scale(1.1);
+
 }
 
-/* empresa */
+#destacados p {
+  padding: 0.5rem;
+  width: fit-content;
+  background-color: #f7c922;
+  border-radius: 5px;
+}
+
+.heartbeat {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@media (min-width:767px) {
+  #destacados .carta {
+    height: fit-content;
+    width: 24rem;
+  }
+
+  #destacados .carta img {
+    height: 24rem;
+    width: 100%;
+
+  }
+}
+
+
+#servicios .card {
+  box-shadow: 5px 5px 10px var(--color-texto-secundario-light);
+
+}
+
+
 
 #empresa {
-  background: url(img/bg/About-stfy\ copiaFINAL.jpg);
+  /* background: url(img/bg/About-stfy\ copiaFINAL.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top right; */
   max-height: fit-content;
-  /* font-family: var(--text-font); */
+  font-family: var(--text-font);
+  color: var(--color-texto-secundario-light);
 }
 
 #empresa i {
@@ -186,7 +292,7 @@ nav {
   padding: 1rem;
 }
 
-/* contacto */
+
 
 footer div {
   padding: 2rem;
@@ -204,8 +310,7 @@ footer span i {
 
 
 footer span:hover {
-  background-color: #9e51ff;
-  color: white;
+  background-color: #f9dda4;
   width: fit-content;
   border-radius: 5px;
 }
@@ -214,16 +319,24 @@ footer img {
   width: 80%;
 }
 
-footer a {
+footer a,
+footer i {
   text-decoration: none;
-  color: #ffdf4b;
+  color: var(--color-texto-primario-light)
 }
+
+#footer img {
+  width: 3rem;
+  aspect-ratio: 1/1;
+}
+
+
+
+
 
 .color {
   color: rgb(173, 95, 236);
 }
-
-/* flecha flotante */
 
 #flecha-arriba {
   background-color: rgb(199, 152, 237);
@@ -238,4 +351,12 @@ footer a {
 #flecha-arriba a {
   text-decoration: none;
   color: white;
+}
+
+.separador span {
+  width: 2%;
+  height: 2px;
+  background-color: black;
+  margin: 2px;
+
 }

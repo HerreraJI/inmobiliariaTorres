@@ -13,188 +13,206 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Caveat:wght@600&family=Comic+Neue&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Caveat:wght@600&family=Comic+Neue&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  
-  <div id="inicio"></div>
 
-  <nav class="navbar navbar-expand-md bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="img/bg/TorresInmoLogoFINAL.png" style="width:60px; height:50px" alt="">
+  <div class="container-fluid g-0">
 
-        Torres Inmobiliaria
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ventas.html">Venta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="alquiler.html">Alquiler</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#servicios">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#empresa">Empresa</a>
-          </li>
-          <a class="btn btn-primary" href="#contacto" role="button">Contacto</a>
-        </ul>
+    <div id="inicio"></div>
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/bg/TorresInmoLogoFINAL.png" style="width:60px; height:50px" alt="">
+
+          Torres Inmobiliaria
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ventas.html">Venta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alquiler.html">Alquiler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#empresa">Empresa</a>
+            </li>
+            <a class="btn btn-warning" style="color:#3C1518" href="#contacto" role="button">Contacto</a>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
 
-  <!--BIENVENIDA-->
-  <div>
-    <div class="container-fluid bienvenida d-flex justify-content-center flex-column p-5 vh-100">
+    <!--BIENVENIDA-->
+
+    <div class="container-fluid bienvenida d-flex justify-content-center flex-column p-5">
       <div class="row row-cols-md-2">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-12 col-md-8">
           <h1 class="scale-in-center">Bienvenido</h1>
           <p class="scale-in-center fs-1">Su próximo hogar está muy cerca...</p>
         </div>
-        <div class="col-sm-12 col-md-4 d-flex justify-content-center align-items-center slide-in-top"><i class="fa-solid fa-house-chimney-user" style="color: #b87eff;"></i></div>
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center slide-in-top"><i
+            class="fa-solid fa-house-chimney-user" style="color: #b87eff;"></i></div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!--ingresos destacados-->
+
+  <div class="container-md p-5" id="destacados">
+    <div class="row my-4">
+      <h2 class="subtitulo text-center">Propiedades destacadas</h2>
+    </div>
+    <div class="row g-0 row-cols-auto ">
+      <div class="col mx-auto my-2">
+        <div class="carta border p-2 bg-light">
+          <img src="img/propiedades/CasaCosquin.jpeg" alt="" class="bg-secondary">
+          <div class="cuerpo-carta p-3">
+            <h2>Venta</h2>
+            <p class="heartbeat">Excelente oportunidad</p>
+            <ul>
+              <li>Cosquin</li>
+              <li>U$S 32000</li>
+            </ul>
+            <div class="link text-end">
+              <a href="">Ver Más >>></a>
+            </div>
+            <!-- <a href="" class="btn btn-primary w-100">Ver+</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="col mx-auto my-2">
+        <div class="carta border p-2 bg-light">
+          <img src="img/propiedades/VillaRosasCasaRefaccionar.jpeg" alt="" class="bg-secondary">
+          <div class="cuerpo-carta p-3">
+            <h2>Venta</h2>
+            <p class="heartbeat">Excelente oportunidad</p>
+            <ul>
+              <li>Villa Rosas</li>
+              <li>U$S 45000</li>
+            </ul>
+            <div class="link text-end">
+              <a href="">Ver Más >>></a>
+            </div>
+            <!-- <a href="" class="btn btn-primary w-100">Ver+</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col mx-auto my-2">
+        <div class="carta border p-2 bg-light">
+          <img src="img/propiedades/NuevoTorinoSalon.jpeg" alt="" class="bg-secondary">
+          <div class="cuerpo-carta p-3">
+            <h2>Alquiler</h2>
+            <p class="heartbeat">Excelente oportunidad</p>
+            <ul>
+              <li>Nuevo Torino</li>
+              <li>Oportunidad</li>
+            </ul>
+            <div class="link text-end">
+              <a href="">Ver Más >>></a>
+            </div>
+            <!-- <a href="" class="btn btn-primary w-100">Ver+</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col mx-auto my-2">
+        <div class="carta border p-2 bg-light">
+          <img src="img/propiedades/LaFaldaCordoba.jpeg" alt="" class="bg-secondary">
+          <div class="cuerpo-carta p-3">
+            <h2>Venta</h2>
+            <p class="heartbeat">Excelente oportunidad</p>
+            <ul>
+              <li>La Falda</li>
+              <li>U$S 34000</li>
+            </ul>
+            <div class="link text-end">
+              <a href="">Ver Más >>></a>
+            </div>
+            <!-- <a href="" class="btn btn-primary w-100">Ver+</a> -->
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!--VENTA y ALQUILER-->
-  <section id="main" class="container-fluid">
-    <div class="row row-cols-1 row-cols-md-2 border" data-aos="fade-right">
-      <div class="col border" id="venta" >
-        <a href="ventas.html"
-          class="w-100 h-100 d-flex justify-content-center align-items-center link-danger link-underline-opacity-0 link-opacity-50 link-offset-2 link-underline-opacity-100-hover link-opacity-100-hover">VENTA</a>
-      </div>
-      <div class="col border" id="alquiler" >
-        <a href="alquiler.html"
-          class="w-100 h-100 d-flex justify-content-center align-items-center link-danger link-underline-opacity-0 link-opacity-50 link-offset-2 link-underline-opacity-100-hover link-opacity-100-hover">ALQUILER</a>
-      </div>
 
-    </div>
-  </section>
-
-  <!--ingresos destacados-->  
-
-    <div class="container-fluid p-5 bg-warning-subtle border" id="destacados">
-      <div class="row my-4">
-        <h2 class="subtitulo">Propiedades destacadas</h2>
-      </div>
-      <div class="row g-0 row-cols-auto justify-content-center">
-        <div class="col m-2">
-          <div class="carta border p-2 bg-light">            
-            <img src="img/propiedades/CasaCosquin.jpeg" alt="" class="bg-secondary">
-            <div class="cuerpo-carta p-3">              
-              <h2>Venta</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
-              <ul>
-                <li>Direccion</li>
-                <li>Precio</li>
-              </ul>
-              <a href=""class="btn btn-primary w-100" >Consultar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col m-2">
-          <div class="carta border p-2 bg-light">            
-            <img src="img/propiedades/VillaRosasCasaRefaccionar.jpeg" alt="" class="bg-secondary">
-            <div class="cuerpo-carta p-3">              
-              <h2>Venta</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
-              <ul>
-                <li>Direccion</li>
-                <li>Precio</li>
-              </ul>
-              <a href=""class="btn btn-primary w-100" >Consultar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col m-2">
-          <div class="carta border p-2 bg-light">            
-            <img src="img/propiedades/NuevoTorinoSalon.jpeg" alt="" class="bg-secondary">
-            <div class="cuerpo-carta p-3">              
-              <h2>Alquiler</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
-              <ul>
-                <li>Direccion</li>
-                <li>Precio</li>
-              </ul>
-              <a href=""class="btn btn-primary w-100" >Consultar</a>
-            </div>
-          </div>
-        </div>
-        <div class="col m-2">
-          <div class="carta border p-2 bg-light">            
-            <img src="img/propiedades/LaFaldaCordoba.jpeg" alt="" class="bg-secondary" >
-            <div class="cuerpo-carta p-3">              
-              <h2>Venta</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptas?</p>
-              <ul>
-                <li>Direccion</li>
-                <li>Precio</li>
-              </ul>
-              <a href=""class="btn btn-primary w-100" >Consultar</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container-md separador d-flex align-items-center justify-content-center">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
 
   <!--Otros Servicios-->
-  <div class="container-fluid bg-warning-subtle py-5" id="servicios">
+  <div class="container-md py-5" id="servicios">
     <div class="row p-4">
-      <h2 class="subtitulo">Servicios</h2>
+      <h2 class="subtitulo text-center">Servicios</h2>
     </div>
     <div class="row row-cols-auto justify-content-center mb-4 gy-3">
       <div class="col">
         <div class="card" style="width: 18rem;">
-          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-magnifying-glass-dollar" style="font-size: 6rem;"></i></div>
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i
+              class="fa-solid fa-magnifying-glass-dollar" style="font-size: 6rem; color:#F5C056;"></i></div>
           <div class="card-body">
             <h5 class="card-title">Tasaciones</h5>
-            <p class="card-text">Tenemos la experiencia necesaria para darle a su propiedad el valor de mercado.</p>
-            <a href="https://wa.me/5493492392358" style="width:100%" class="btn btn-primary">Contacto</a>
+            <p class="card-text">Tenemos la experiencia necesaria para darle a su propiedad el valor de mercado que
+              merece.</p>
+            <a href="https://wa.me/5493492392358" style="width:100%" class="btn btn-warning">Contacto</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-scale-balanced" style="font-size: 6rem;"></i></div>
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i
+              class="fa-solid fa-scale-balanced" style="font-size: 6rem; color:#F5C056"></i></div>
           <div class="card-body">
-            <h5 class="card-title">Administracion</h5>
-            <p class="card-text">podemos ayudarlo con la administración de su inmueble, garantizando seguridad.</p>
-            <a href="https://wa.me/5493492392358" class="btn btn-primary" style="width:100%">Contacto</a>
+            <h5 class="card-title">Administración</h5>
+            <p class="card-text">Podemos ayudarlo con la administración de su inmueble, garantizando seguridad.</p>
+            <a href="https://wa.me/5493492392358" class="btn btn-warning" style="width:100%">Contacto</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem; ">
-          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-car" style="font-size: 6rem;"></i></div>
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i
+              class="fa-solid fa-car" style="font-size: 6rem; color:#F5C056"></i></div>
           <div class="card-body">
-            <h5 class="card-title">Gestoria</h5>
-            <p class="card-text">Contamos con el conocimiento necesario para llevar adelante la gestoria de su vehiculo.
+            <h5 class="card-title">Gestoría</h5>
+            <p class="card-text">Contamos con el conocimiento necesario para llevar adelante la gestoria de su vehículo.
             </p>
-            <a href="https://wa.me/5493492392358" class="btn btn-primary" style="width:100%">Contacto</a>
+            <a href="https://wa.me/5493492392358" class="btn btn-warning" style="width:100%">Contacto</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-circle-question" style="font-size: 6rem;"></i></div>
+          <div style="width:100%; height: 8rem;" class="d-flex justify-content-center align-items-center"><i
+              class="fa-solid fa-circle-question" style="font-size: 6rem;color:#F5C056"></i></div>
           <div class="card-body">
-            <h5 class="card-title">Otra consulta</h5>
+            <h5 class="card-title">Otras consultas</h5>
             <p class="card-text">No dude en contactarnos, su consulta no nos molesta
               estamos para responder sus inquietudes.</p>
-            <a href="https://wa.me/5493492392358" class="btn btn-primary" style="width:100%">Contacto</a>
+            <a href="https://wa.me/5493492392358" class="btn btn-warning" style="width:100%">Contacto</a>
           </div>
         </div>
       </div>
@@ -203,44 +221,51 @@
   </div>
 
 
+  <div class="container-md separador d-flex align-items-center justify-content-center">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+
   <!--Empresa-->
 
-  <section id="empresa" class="py-5 px-4">
-    <div class="d-flex align-items-center">
-      <div class="contenido container-fluid p-md-4">
-        <div class="row">
-          <h2 class="subtitulo">Empresa</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-4 ">
-            Mi nombre es Estefania Torres soy <strong>martillera publica y corredora de comercio</strong> recibida en la
-            <strong>UNL</strong> en el año 2017 Matricula N°481.
-          </div>
-          <p class="col-md-4"> Desde entonces me he propuesto lograr el mayor profesionalismo capacitandome
-            continuamente, actualmente a cargo de <strong>TORRES INMOBILIARIA</strong>. Empresa joven pero de rapido
-            crecimiento.</p>
-          <p class="col-md-4">Nos caracterizan el Entusiasmo, Profesionalismo y por sobre todo acompañamiento y
-            asesoriamiento continuo con quienes se contactan con nosotros. Aquellos que ya nos conocen destacan el trato
-            cercano que <strong>TORRES INMOBILIARIA</strong> tiene con sus clientes.</p>
-        </div>
-        <div class="row mt-4" id="icons-about">
-          <div class="col-md-4 d-flex justify-content-center"><i class="fa-solid fa-address-card"
-              style="color: #9573f2;"></i></div>
-          <div class="col-md-4 d-flex justify-content-center"><i class="fa-solid fa-award" style="color: #9573f2;"></i>
-          </div>
-          <div class="col-md-4 d-flex justify-content-center"><i class="fa-regular fa-star" style="color: #9573f2;"></i>
-          </div>
-        </div>
+
+
+  <div class="contenido container-md py-5 " id="empresa">
+    <div class="row align-items-center p-4">
+      <h2 class="subtitulo text-center">Empresa</h2>
+    </div>
+    <div class="row p-4">
+      <div class="col-md-4 ">
+        Mi nombre es Estefania Torres soy <strong>martillera pública y corredora de comercio</strong> recibida en la
+        <strong>UNL</strong> en el año 2017 Matricula N°876
+      </div>
+      <p class="col-md-4"> Desde entonces me he propuesto alcanzar la excelencia en este rubro que tanto me apasiona
+        mediante la capacitación
+        constante, actualmente estoy a cargo de <strong>TORRES INMOBILIARIA</strong>. Empresa joven pero de rápido
+        crecimiento.</p>
+      <p class="col-md-4">Nos caracterizan el Entusiasmo, Profesionalismo y por sobre todo acompañamiento y
+        asesoriamiento continuo con quienes se contactan con nosotros. Aquellos que ya nos conocen destacan el trato
+        cercano que <strong>TORRES INMOBILIARIA</strong> tiene con sus clientes.</p>
+    </div>
+    <div class="row mt-4" id="icons-about">
+      <div class="col-md-4 d-flex justify-content-center"><i class="fa-solid fa-address-card"
+          style="color: #F5C056;"></i></div>
+      <div class="col-md-4 d-flex justify-content-center"><i class="fa-solid fa-award" style="color: #F5C056;"></i>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center"><i class="fa-regular fa-star" style="color: #F5C056;"></i>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!--Boton flotante--> 
+
+  <!--Boton flotante-->
   <div id="flecha-arriba" class="d-flex justify-content-center align-items-center" data-aos="fade-left"
-  data-aos-anchor="#main"><a href="#inicio"><i class="fa-solid fa-angles-up"></i></a></div>
+    data-aos-anchor="#destacados"><a href="#inicio"><i class="fa-solid fa-angles-up"></i></a></div>
   <!--Footer-->
 
-  <footer class="container-fluid" id="contacto">
+  <footer class="container-fluid bg-dark-subtle" id="contacto">
     <div class="row">
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <h1 class="">TORRES</h1>
@@ -249,7 +274,7 @@
       </div>
       <div class="col-md-6">
         <div class="row border-bottom">
-          <h3>Direccion</h3>
+          <h3>Dirección</h3>
           <p>Santa Rosa 669, Rafaela, Santa Fe</p>
         </div>
         <div class="row border-bottom">
@@ -259,10 +284,9 @@
         <div class="row">
           <h3>Redes</h3>
           <span><a href="https://www.instagram.com/torres.inmobiliaria.rafaela" target="_blank"><i
-                class="fa-brands fa-instagram fa-beat" style="color:#ffdf4b;"></i>Instagram</a></span>
-          <span><a href="https://wa.me/5493492392358"><i class="fa-brands fa-whatsapp fa-shake"
-                style="color:#ffdf4b;"></i>WhatsApp</a></span>
-          <span><a href=""><i class="fa-regular fa-envelope fa-spin" style="color: #ffdf4b;"></i>E-Mail</a></span>
+                class="fa-brands fa-instagram fa-beat"></i>Instagram</a></span>
+          <span><a href="https://wa.me/5493492392358"><i class="fa-brands fa-whatsapp fa-shake"></i>WhatsApp</a></span>
+          <span><a href=""><i class="fa-regular fa-envelope fa-spin"></i>E-Mail</a></span>
         </div>
       </div>
     </div>
@@ -274,9 +298,11 @@
     </div>
   </footer>
 
-  <footer class="container-fluid bg-black">
-    <div class="row">
-      <p class="text-center text-white">Derechos reservados TORRES INMOBILIARIA 2023 - Rafaela</p>
+  <footer class="container-fluid bg-black" id="footer">
+    <div class="row row-cols-md-3 row-cols-1 py-2 text-white align-items-center">
+      <div class="col py-1  text-center"><img src="img/bg/colegio corredores.png" alt=""></div>
+      <div class="col py-1 text-center">Derechos reservados TORRES INMOBILIARIA 2023</div>
+      <div class="col py-1 text-center">Desarrollo web JHerrera</div>
     </div>
   </footer>
 
@@ -295,8 +321,3 @@
 </body>
 
 </html>
-
-
-
-
-
