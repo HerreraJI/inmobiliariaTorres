@@ -3,6 +3,9 @@ body{
 }
 .subtitulo{
     border-radius: 0 0 10px 10px;
+    font-family: 'Abhaya Libre', serif;
+    text-align: center;
+    font-size: 44px;
 }
 nav {
     min-height: 7rem;
