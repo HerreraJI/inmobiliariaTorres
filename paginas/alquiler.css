@@ -1,0 +1,8 @@
+nav {
+    min-height: 7rem;
+}
+
+#subtitulo-alquiler {
+    color: rgb(60, 56, 56);
+    border-radius: 0 0 10px 10px;
+}

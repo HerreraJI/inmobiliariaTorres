@@ -1,21 +1,39 @@
+body{
+    background-image: linear-gradient(to bottom, #fffff7, #fff4e6, #ffe7e1, #ffdbeb, #f2d6ff);
+}
+.subtitulo{
+    border-radius: 0 0 10px 10px;
+}
 nav {
     min-height: 7rem;
 }
-#propiedades h1{
-    color:rgb(60, 56, 56);    
+
+#propiedades h1 {
+    color: rgb(60, 56, 56);
 }
 
 .carta {
     height: fit-content;
-    width: 16rem;
+    width: 18rem;
     overflow: hidden;
     border-radius: 7px;
     margin: 1rem 0;
 }
 
 .carta img {
-    height: 16rem ;
-  width: 100%;
+    height: 17rem;
+    width: 100%;
+}
+
+.carta .precio{
+    color: #fbcc6f;
+}
+
+#propiedades .carta:hover{
+    /* transform: scale(1.1); */
+    transform:scale(1.05);
+    box-shadow: 4px 4px 20px rgb(64, 52, 30);
+    transition: 0.6s;
 }
 
 footer div {
@@ -53,3 +71,18 @@ footer i {
     width: 3rem;
     aspect-ratio: 1/1;
 }
+.ocultar {
+    display: none !important;
+}
+
+#flecha-arriba {
+    background-color: rgb(208, 226, 207);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size:2rem;
+    color: green;
+  }

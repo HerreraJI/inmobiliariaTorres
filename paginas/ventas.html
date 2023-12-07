@@ -4,17 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="/img/bg/TorresInmoLogoFINAL.png" type="image/x-icon">
+  <title>Torres Inmobiliaria-Venta</title>
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="ventas.css">
+  <!-- animate -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md bg-body-tertiary">
+  <nav class="navbar navbar-expand-md bg-body-tertiary" id="nav"> 
     <div class="container-fluid">
-      <a class="navbar-brand" href="/Inmobiliaria estefy/index.html">
-        <img src="/Inmobiliaria estefy/img/bg/TorresInmoLogoFINAL.png" style="width:60px; height:50px" alt="">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/img/bg/TorresInmoLogoFINAL.png" style="width:60px; height:50px" alt="">
 
         Torres Inmobiliaria
       </a>
@@ -25,19 +32,19 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav nav-underline">
           <li class="nav-item">
-            <a class="nav-link" href="/Inmobiliaria estefy/index.html">Inicio</a>
+            <a class="nav-link" href="/index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#" aria-current="page">Venta</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Inmobiliaria estefy/notFound.html">Alquiler</a>
+            <a class="nav-link" href="/notFound.html">Alquiler</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Inmobiliaria estefy/index.html#servicios">Servicios</a>
+            <a class="nav-link" href="/index.html#servicios">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Inmobiliaria estefy/index.html#empresa">Empresa</a>
+            <a class="nav-link" href="/index.html#empresa">Empresa</a>
           </li>
           <a class="btn btn-warning" style="color:#3C1518" href="#contacto" role="button">Contacto</a>
         </ul>
@@ -45,111 +52,166 @@
     </div>
   </nav>
 
-  <!-- propiedades -->
-  <div class="container-fluid my-3" id="propiedades">
-    <div class="row">
-      <div class="col ">
-        <h1 class="m-3 p-3 bg-warning rounded">Propiedades en venta</h1>
-      </div>
-    </div>
-    <div class="row my-5" >
-      <div class="col mx-5">
-        <select name="filtro" id="filtro">
-          <option value="">Filtrar</option>
-          <option value="casa">Casas</option>
-          <option value="departamento">Departamentos</option>
-          <option value="terreno">Terrenos</option>
-          <option value="campo">Campos</option>
-          <option value="todos">Todos</option>
-        </select>
-      </div>
-    </div>
 
-    <div class="row justify-content-around my-5">
-      <div class="carta border p-2 bg-light">
-        <img src="/Inmobiliaria estefy/img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="carta border p-2 bg-light">
-        <img src="img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="carta border p-2 bg-light">
-        <img src="img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="carta border p-2 bg-light">
-        <img src="img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="carta border p-2 bg-light">
-        <img src="img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="carta border p-2 bg-light">
-        <img src="img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="carta border p-2 bg-light">
-        <img src="img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
-      </div>
-      <div class="carta border p-2 bg-light">
-        <img src="img/propiedades/venta-losArces.jpeg" alt="" class="bg-secondary">
-        <div class="cuerpo-carta p-3">
-          <h2>Venta</h2>
-          <ul>
-            <li>Rafaela-Bo los Arces</li>
-            <li>U$S 26000</li>
-          </ul>
-        </div>
+  <div class="container my-3" id="subtitulo-propiedades">
+    <div class="row  rounded my-5">
+      <div class="col mb-3">
+        <h2 class="m-3 p-3 bg-warning subtitulo">Propiedades en venta</h1>
       </div>
     </div>
   </div>
 
+  <!-- filtro -->
 
+  <div class="container">
+    <div class="row my-3">
+      <div class="col-8 col-md-3 mx-5">
+        <select name="filtro" id="filtro" class="form-select">
+          <option value="">Filtrar</option>
+          <option value="campo">Campos</option>
+          <option value="casa">Casas</option>
+          <option value="departamento">Departamentos</option>
+          <option value="local">Locales</option>
+          <option value="terreno">Terrenos</option>
+          <option value="todos">Todos</option>
+        </select>
+      </div>
+      <div class="col-8 col-md-4"></div>
+    </div>
+  </div>
+
+  <!-- propiedades -->
+  <div class="container mb-5" id="propiedades">
+    <div class="row justify-content-around">
+
+      <div class="carta border terreno py-2 g-0 bg-light ">
+        <h2 class="text-center py-2 ">Podio</h2>
+        <p class="col text-center">Rafaela-B° los Arces</p>
+        <img src="/img/propiedades/venta-losArces.jpeg" alt="venta-losArces" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i> 10x30, Asfalto y alumbrado</i></p>
+          <div class="h2 text-center precio"> *U$S 26000*</div>
+        </div>
+      </div>
+
+      <div class="carta border terreno py-2 g-0 bg-light ">
+        <h2 class="text-center py-2 ">Geuna 3025</h2>
+        <p class="col text-center">Rafaela-B° Mora</p>
+        <img src="/img/propiedades/BarrioMoraTerreno.jpeg" alt="venta-losArces" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>10x24, a 10 cuadras del supermercado</i></p>
+          <div class="h2 text-center precio"> *U$S 14000*</div>
+        </div>
+      </div>
+
+      <div class="carta border casa py-2 g-0 bg-light">
+        <h2 class="text-center py-2 ">Cosquín</h2>
+        <p class="col text-center">Córdoba</p>
+        <img src="/img/propiedades/CasaCosquin.jpeg" alt="CasaCosquin" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>Garage, 2 baños, 1 dormitorio, patio seco</i></p>
+          <div class="h2 text-center precio"> *U$S 32000*</div>
+        </div>
+      </div>
+
+      <div class="carta border casa py-2 g-0 bg-light">
+        <h2 class="text-center py-2 ">La Falda</h2>
+        <p class="col text-center">Córdoba</p>
+        <img src="/img/propiedades/LaFaldaCordoba.jpeg" alt="LaFaldaCordoba" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>Cocina-comedor, dormitorio con baño, garage, con dpto interno</i></p>
+          <div class="h2 text-center precio"> *U$S 34000*</div>
+        </div>
+      </div>
+
+      <div class="carta border local py-2 g-0 bg-light">
+        <h2 class="text-center py-2 ">Nuevo Torino</h2>
+        <p class="col text-center">Santa Fe</p>
+        <img src="/img/propiedades/NuevoTorinoSalon.jpeg" alt="NuevoTorinoSalon" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>Luz trifásica, baño y patio</i></p>
+          <div class="h2 text-center precio"> *Oportunidad*</div>
+        </div>
+      </div>
+
+      <div class="carta border terreno py-2 g-0 bg-light">
+        <h2 class="text-center py-2 ">9 de Julio</h2>
+        <p class="col text-center">Ataliva</p>
+        <img src="/img/propiedades/venta-ataliva.jpeg" alt="ataliva" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>12,5x30 incluye 900 ladrillos block, planos aprobados</i></p>
+          <div class="h2 text-center precio"> *18000*</div>
+        </div>
+      </div>
+
+      <div class="carta border casa py-2 g-0 bg-light">
+        <h2 class="text-center py-2 ">B° Belgrano</h2>
+        <p class="col text-center">Rafaela</p>
+        <img src="/img/propiedades/venta-Belgrano.jpeg" alt="Belgrano" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>2 dormitorios, cocina, comedor, baño, quincho con asador techado, patio con piscina, garage
+              doble</i></p>
+          <div class="h2 text-center precio"> *Acepta permuta*</div>
+        </div>
+      </div>
+
+      <div class="carta border casa py-2 g-0 bg-light">
+        <h2 class="text-center py-2 ">B° Sarmiento</h2>
+        <p class="col text-center">Rafaela</p>
+        <img src="/img/propiedades/venta-Sarmiento.jpeg" alt="Sarmiento" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>2 dormitorios, hall de entrada, cocina-comedor, baño, lavadero, patio con asador, garage
+              doble</i></p>
+          <div class="h2 text-center precio"> *Cosultar*</div>
+        </div>
+      </div>
+
+      <div class="carta border casa py-2 g-0 bg-light ">
+        <h2 class="text-center py-2 ">B° Villa Rosas</h2>
+        <p class="col text-center">Rafaela</p>
+        <img src="/img/propiedades/VillaRosasCasaRefaccionar.jpeg" alt="villaRosas" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>A refaccionar o demoler, terreno de 393m2, comedor, cocina, baño, 1 dormitorio, casa
+              interna a desarmar</i></p>
+          <div class="h2 text-center precio"> *U$S 45000*</div>
+        </div>
+      </div>
+
+      <div class="carta border departamento py-2 g-0 bg-light ">
+        <h2 class="text-center py-2 ">B° Villa del Parque</h2>
+        <p class="col text-center">Rafaela</p>
+        <img src="/img/propiedades/venta-villaDelParque.jpeg" alt="villadelParque" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>2 dormitorios, cocina, comedor, baño, balcon, en complejo</i></p>
+          <div class="h2 text-center precio"> *U$S 36000*</div>
+        </div>
+      </div>
+
+      <div class="carta border terreno py-2 g-0 bg-light ">
+        <h2 class="text-center py-2 ">Villa Caeiro</h2>
+        <p class="col text-center">Córdoba</p>
+        <img src="/img/propiedades/venta-vllaCaero.jpeg" alt="villaCaeiro" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>8x32, escritura, hay que mensurar, todos los servicios</i></p>
+          <div class="h2 text-center precio"> *U$S 20000*</div>
+        </div>
+      </div>
+
+      <div class="carta border terreno py-2 g-0 bg-light ">
+        <h2 class="text-center py-2 ">Villa Giardino</h2>
+        <p class="col text-center">Córdoba</p>
+        <img src="/img/propiedades/venta-vllaGiardino.jpeg" alt="villaGiardino" class="bg-secondary">
+        <div class="cuerpo-carta p-3">
+          <p class="p-3"> <i>11x32, escritura, lote 100% llano, calle de ripio, pilar de luz</i></p>
+          <div class="h2 text-center precio"> *U$S 13000*</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Boton flotante-->
+  <div id="flecha-arriba" class="d-flex justify-content-center align-items-center animate__animated animate__heartBeat animate__infinite" data-aos="fade-left"><a href="https://wa.me/5493492392358" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #37a043;"></i></a></div>
 
 
   <!-- footer -->
@@ -159,7 +221,7 @@
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <h1 class="">TORRES</h1>
         <h1>INMOBILIARIA</h1>
-        <img src="/Inmobiliaria estefy/img/bg/TorresInmoLogoFINAL.png" alt="torres inmobiliaria logo">
+        <img src="/img/bg/TorresInmoLogoFINAL.png" alt="torres inmobiliaria logo">
       </div>
       <div class="col-md-6">
         <div class="row border-bottom">
@@ -174,7 +236,8 @@
           <h3>Redes</h3>
           <span><a href="https://www.instagram.com/torres.inmobiliaria.rafaela" target="_blank"><i
                 class="fa-brands fa-instagram fa-beat"></i>Instagram</a></span>
-          <span><a href="https://wa.me/5493492392358"><i class="fa-brands fa-whatsapp fa-shake"></i>WhatsApp</a></span>
+          <span><a href="https://wa.me/5493492392358"><i
+                class="fa-brands fa-whatsapp fa-shake"></i>WhatsApp-3492392358</a></span>
           <span><a href=""><i class="fa-regular fa-envelope fa-spin"></i>E-Mail</a></span>
         </div>
       </div>
@@ -189,15 +252,18 @@
 
   <footer class="container-fluid bg-black" id="footer">
     <div class="row row-cols-md-3 row-cols-1 py-2 text-white align-items-center">
-      <div class="col py-1  text-center"><img src="/Inmobiliaria estefy/img/bg/colegio corredores.png" alt=""></div>
+      <div class="col py-1  text-center"><img src="/img/bg/colegio corredores.png" alt=""></div>
       <div class="col py-1 text-center">Derechos reservados TORRES INMOBILIARIA 2023</div>
       <div class="col py-1 text-center"><a href="https://wa.me/5493492593649" style="color: white;">Desarrollo web
           JHerrera</a></div>
     </div>
   </footer>
+  <script src="ventas.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/91a32acd3c.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
